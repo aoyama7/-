@@ -1,0 +1,14 @@
+.tabs_view {
+  display: flex;
+  padding: 20rpx 120rpx;
+  justify-content: space-between;
+}
+.tabs_item {
+  flex:1;
+  text-align: center;
+
+}
+.active {
+  color :blue;
+  border-bottom: 3px solid blue;
+}

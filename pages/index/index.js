@@ -1,0 +1,32 @@
+//index.js
+//获取应用实例
+const app = getApp()
+
+Page({
+  data:{
+    titles:[
+      {
+        id:0,
+        title:"推荐"
+      },
+      {
+        id:1,
+        title:"分类"
+      },
+      {
+        id:2,
+        title:"最新"
+      },
+      {
+        id:3,
+        title:"专辑"
+      }
+    ],
+    receiveIndex:0
+  },
+  receiveIndex(e){
+    this.setData({
+      receiveIndex:e.detail
+    })
+  }
+})

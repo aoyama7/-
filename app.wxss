@@ -1,0 +1,4 @@
+view,text,navgator,image,swiper {
+    box-sizing: border-box;
+
+}
