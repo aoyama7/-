@@ -1,0 +1,23 @@
+
+<!-- 精选大图模块 -->
+<view class="cover_view">
+  <view class="cover_item" wx:for="{{cover}}" wx:key="_id">
+    <!-- 图片路径为服务器地址+图片名称，使用数据绑定的方式完成拼接
+         *给图片标签设置mode属性，修改图片显示样式*-->
+     <image class="my_img" mode="widthFix" src="{{sURL+item.thumb}}"></image>
+  </view>
+</view>
+<!-- 日期模块 -->
+<view class="month_view">
+  <view class="month_title">
+    <view class="data">{{month.month_msg}}</view>
+    <view class="title">{{month.title}}</view>
+    <view class="data">更多></view>
+  </view>
+  <view class="month_con">
+    <!-- month里存储了多个数据，在list数组对象里存储的是图片列表 -->
+    <view class="month_item" wx:for="{{month.list}}" wx:key="_id">
+      <image class="my_img" mode="aspectFill" src="{{sURL+item.thumb}}"></image>
+    </view>
+  </view>
+</view>

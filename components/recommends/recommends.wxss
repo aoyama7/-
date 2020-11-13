@@ -1,0 +1,31 @@
+/* components/recommend/recommends.wxss *//* 精选大图 */
+.cover_view{
+  display: flex;
+  /* 两行显示，需要设置换行属性 */
+  flex-wrap: wrap;
+ }
+ .cover_item {
+  width: 50%;
+  border: 3px solid #fff;
+ }
+ .my_img {
+   width: 100%;
+ }
+ /* 日期模块 */
+ .month_title {
+   padding: 16rpx;
+   display: flex;
+   justify-content: space-between;
+ }
+ .data {
+   color:hotpink;
+   font-weight: 700;
+ }
+ .month_con {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ .month_item {
+   width: 33.33%;
+   border: 3px solid #fff;
+ }
