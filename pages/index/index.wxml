@@ -1,9 +1,9 @@
 
 <tabs tabs="{{titles}}" bindaaa="receiveIndex"></tabs>
-<view wx:if="{{receiveIndex==0}}">0
+<view wx:if="{{receiveIndex==0}}">
 <recommends></recommends>
 
 </view>
-<view wx:if="{{receiveIndex==1}}">1</view>
-<view wx:if="{{receiveIndex==2}}">2</view>
-<view wx:if="{{receiveIndex==3}}">3</view>
+<view wx:if="{{receiveIndex==1}}"></view>
+<view wx:if="{{receiveIndex==2}}"></view>
+<view wx:if="{{receiveIndex==3}}"></view>

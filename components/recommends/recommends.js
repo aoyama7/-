@@ -1,19 +1,25 @@
 // components/recommend/recommends.js
 Component({
   properties: {
-
   },
   data: {
     cover:[], // 接收服务器拿到的精选大图
     month:[], // 接收服务器拿到月份数据
-    sURL:"http://119.29.12.250:3000/"
+    list:[],
+    total:0,
+    sURL:"http://119.29.12.250:3000/",
     // 这里是老师的服务器 可以更换
     // 但是我不懂老师的服务器是怎么传过来json的
+    params:{
+      skip:0,
+      limit:12
+    }
   },
   lifetimes: {
     attached:function(){
       this.getCover()
       this.getMonth()
+      this.getHot()
     }
   },
   methods: {
@@ -53,6 +59,44 @@ Component({
 
 
 
-    }
+    },
+    getHot(){
+      wx.request({
+        url: 'http://119.29.12.250:3000/home/hot?',
+        data:this.data.params,
+        success:(res)=>{
+        // console.log(res)
+        // console.log(res.data.data)
+        console.log(res.data)
+          this.setData({
+            list:[...this.data.list,...res.data.data.list],
+            total:res.data.data.total
+          })
+        }
+      })
+    },
+    scrolltolower(){
+      // 判断是否还有数据，没有的话提示用户
+      if(this.data.params.skip >= this.data.total){
+        // 使用微信提示框提示用户没有更多数据
+        wx.showToast({
+          title: '还拉呢？👴都被扒光了',
+          icon:'none'
+        })
+        return
+        // 终止程序，代码不再往下运行
+      } 
+      var params = this.data.params
+      // 在请求之前，先修改请求参数
+      params.skip += 12
+      this.setData({
+        params:params
+      })
+      console.log(params)
+      this.getHot()
+    } 
   }
+
+
+
 })

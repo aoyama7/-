@@ -1,4 +1,4 @@
-
+<scroll-view class="recommend" scroll-y bindscrolltolower="scrolltolower">
 <!-- 精选大图模块 -->
 <view class="cover_view">
   <view class="cover_item" wx:for="{{cover}}" wx:key="_id">
@@ -21,3 +21,13 @@
     </view>
   </view>
 </view>
+<!-- 热门模块 -->
+<view class="hot_view">
+  <view class="hot_title"><text>热门</text></view>
+  <view class="month_con">
+    <view class="month_item" wx:for="{{list}}" wx:key="_id">
+      <image class="my_img" mode="aspectFill" src="{{sURL+item.thumb}}"></image>
+    </view>
+  </view>
+</view>
+</scroll-view>

@@ -1,4 +1,7 @@
-/* components/recommend/recommends.wxss *//* 精选大图 */
+/* 精选大图 */
+.recommend{
+  height: calc(100vh - 40rpx)
+}
 .cover_view{
   display: flex;
   /* 两行显示，需要设置换行属性 */
@@ -29,3 +32,12 @@
    width: 33.33%;
    border: 3px solid #fff;
  }
+ /* 热门模块 */
+.hot_title {
+  color: hotpink;
+  padding: 10rpx;
+}
+.hot_title text {
+  padding-left: 10rpx;
+  border-left: 3px solid hotpink;
+}
