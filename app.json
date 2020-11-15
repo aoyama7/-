@@ -4,7 +4,8 @@
     "pages/horizontal/horizontal",
     "pages/video/video",
     "pages/search/search",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/categoryDetail/categoryDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

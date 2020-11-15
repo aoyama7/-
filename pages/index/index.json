@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "tabs":"/components/tabs/tabs",
-    "recommends":"/components/recommends/recommends"
+    "recommends":"/components/recommends/recommends",
+    "category":"/components/category/category"
   }
 }

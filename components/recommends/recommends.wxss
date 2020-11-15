@@ -7,28 +7,28 @@
   /* 两行显示，需要设置换行属性 */
   flex-wrap: wrap;
  }
- .cover_item {
+.cover_item {
   width: 50%;
   border: 3px solid #fff;
  }
- .my_img {
+.my_img {
    width: 100%;
  }
  /* 日期模块 */
- .month_title {
+.month_title {
    padding: 16rpx;
    display: flex;
    justify-content: space-between;
  }
- .data {
+.data {
    color:hotpink;
    font-weight: 700;
  }
- .month_con {
+.month_con {
    display: flex;
    flex-wrap: wrap;
  }
- .month_item {
+.month_item {
    width: 33.33%;
    border: 3px solid #fff;
  }

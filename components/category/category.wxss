@@ -1,0 +1,32 @@
+.category_view {
+  /* 当前是跳转标签，别忘了给标签添加内减模式 */
+  display: flex;
+  flex-wrap: wrap;
+}
+.category_item {
+  width: 33.3%;
+  /* 设计稿上的样式是正方形显示，宽度给了百分比，高度测量是124px ---》 换算成rpx单位，是248rpx */
+  height: 248rpx;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  /* 文字部分需要使用定位，所以根据子绝父相的原则，给父盒子增加相对行为属性 */
+  position: relative;
+}
+.txt {
+  /* 子元素绝对定位 */
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  /* 使用rgba（）来设置背景半透明 */
+  background-color: rgba(0,0,0,.4);
+  width: 100%;
+  padding: 5rpx;
+  color: #fff;
+}
+.img {
+  width: 100%;
+}
+.img image {
+    width: 100%;
+    height: 100%;
+}

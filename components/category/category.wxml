@@ -1,0 +1,25 @@
+<view class="category_view">
+
+   <!-- 页面的url传递参数--点击对应的图片查看详情链接，需要根据当前图片id对应加载数据
+        A页面传递写法 --- 在url里面拼接当前图片的id
+   -->
+   <navigator url="{{'/pages/categoryDetail/categoryDetail?id='+item.id}}" class="category_item" wx:for="{{list}}" wx:key="_id">
+  
+    <view class="txt">{{item.name}}</view>
+    <view class="img">
+      <image src="{{sURL+item.cover}}" mode="aspectFill"></image>
+    </view>
+  
+  
+  
+  
+  
+  
+  </navigator>
+
+
+
+
+
+
+</view>
