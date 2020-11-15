@@ -1,1 +1,13 @@
-/* pages/categoryDetail/categoryDetail.wxss */
+/* 使用calc计算属性设置固定高度*/
+.detail {
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-wrap: wrap;
+}
+.month_item {
+  width: 33.33%;
+  border: 3px solid #fff;
+}
+.my_img {
+  width: 100%;
+}

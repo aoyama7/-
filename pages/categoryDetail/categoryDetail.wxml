@@ -1,2 +1,13 @@
-<!--pages/categoryDetail/categoryDetail.wxml-->
-<text>pages/categoryDetail/categoryDetail.wxml</text>
+<!--引入tabs子组件---- json文件里配置路径
+    1.通过tabs属性向子组件传递参数，实现标题数据动态变化；
+    2.通过绑定aaa事件，拿到子组件传递过来的当前点击项的索引-->
+    <tabs tabs="{{titles}}" bindaaa="changeIndex"></tabs>
+<!-- scroll-view标签做滚动组件 --- 在wxss页面使用calc计算属性设置标签固定高度；
+    1.使用 scroll-y 开启纵向滚动；使用enable-flex 开启弹性盒子布局
+    2.绑定触底事件，当用户滑动到底部的时候重新向服务器拿一次数据（分页！）
+-->
+<scroll-view scroll-y class="detail" enable-flex bindscrolltolower="scrolltolower">
+        <view class="month_item" wx:for="{{list}}" wx:key="_id">
+          <image class="my_img" mode="aspectFill" src="{{sURL+item.thumb}}"></image>
+        </view>
+</scroll-view>
