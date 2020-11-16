@@ -1,0 +1,45 @@
+/* components/album/album.wxss */
+.album {
+  height: calc(100vh - 30px);
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.album_item {
+  width: 50%;
+  border: 3px solid #fff;
+  position: relative;
+  
+}
+.txtbox {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color:rgba(0,0,0,.4);
+  color: #fff;
+  padding: 8rpx;
+  
+}
+.banner {
+  width: 100%;
+  height: 484rpx;
+  
+}
+.my_img{
+  width: 100%;
+  height: 484rpx;
+  
+}
+.imgs_box {
+  height: 125rpx;
+  display: flex;
+  
+}
+.imgs_box image {
+   /* 375rpx 屏幕的二分之一，平均分成3份，等于125rpx */
+  width: 125rpx;
+  height: 125rpx;
+  border: 2px solid #fff;
+ 
+}

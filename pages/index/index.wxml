@@ -6,5 +6,9 @@
 <view wx:if="{{receiveIndex==1}}">
   <category></category>
 </view>
-<view wx:if="{{receiveIndex==2}}"></view>
-<view wx:if="{{receiveIndex==3}}"></view>
+<view wx:if="{{receiveIndex==2}}">
+  
+</view>
+<view wx:if="{{receiveIndex==3}}">
+  <album></album>
+</view>

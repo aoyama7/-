@@ -1,0 +1,19 @@
+<scroll-view scroll-y="true" enable-flex class="album">
+  <view class="album_item" wx:for="{{list}}" wx:key="_id">
+    <!-- 标题部分 -->
+    <view class="txtbox">
+    <view class="txt_name">{{item.name}}</view>
+    <view>共{{item.count}}张</view>
+    </view>
+    <!-- 标题部分 -->
+    <view class="banner">
+    <image class="my_img" mode="aspectFill" src="{{sURL+item.cover}}"></image>
+    </view>
+    <!-- 小图部分 -->
+    <view class="imgs_box">
+    <!--双层循环--- 要循环的是list的每一项item里的imgs；
+    tips：使用wx:for-item属性重新定义循环项的类名，设置成什么就调用什么-->
+    <image src="{{sURL+item2}}" wx:for="{{item.imgs}}" wx:for-item="item2" wx:key="*this"></image>
+    </view>
+  </view>
+</scroll-view>

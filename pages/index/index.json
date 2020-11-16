@@ -2,6 +2,7 @@
   "usingComponents": {
     "tabs":"/components/tabs/tabs",
     "recommends":"/components/recommends/recommends",
-    "category":"/components/category/category"
+    "category":"/components/category/category",
+    "album":"/components/album/album"
   }
 }
