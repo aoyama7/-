@@ -30,3 +30,15 @@ position: relative;
   border-radius: 50%;
   margin-right: 20rpx;
 }
+.list_view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list_item {
+  width: 33.33%;
+  height: 480rpx;
+  border: 3px solid #fff;
+}
+.list_item image {
+  width: 100%;
+}

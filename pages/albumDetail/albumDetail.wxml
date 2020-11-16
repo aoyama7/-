@@ -15,6 +15,11 @@
     <view class="user">
       <image src="{{sURL+album.user.avatar}}"></image>
       <view>{{album.user.name}}</view>
-
     </view>
+    <!-- 列表部分 -->
+  <view class="list_view">
+    <view class="list_item" wx:for="{{list}}" wx:key="_id">
+      <image src="{{sURL+item.thumb}}" mode="aspectFill"></image>
+    </view>
+  </view>
 </view>
