@@ -5,7 +5,8 @@
     "pages/video/video",
     "pages/search/search",
     "pages/mine/mine",
-    "pages/categoryDetail/categoryDetail"
+    "pages/categoryDetail/categoryDetail",
+    "pages/albumDetail/albumDetail"
   ],
   "window":{
     "backgroundTextStyle":"light",

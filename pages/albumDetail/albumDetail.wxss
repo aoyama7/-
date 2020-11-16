@@ -1,0 +1,32 @@
+.banner {
+position: relative;
+}
+.ban_swiper {
+  height: 480rpx;
+  width: 100%;
+}
+.ban_swiper image {
+  width: 100%;
+  height: 100%;
+}
+.title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 30rpx;
+  background-color: rgba(0,0,0,.4);
+}
+.user {
+  padding: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.user image {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+}

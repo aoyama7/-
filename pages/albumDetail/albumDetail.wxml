@@ -1,0 +1,20 @@
+<view wx:if="{{album.user}}" class="album_view">
+<!-- banner轮播图 -->
+  <view class="banner">
+    <swiper class="ban_swiper" indicator-dots autoplay circular>
+      <swiper-item wx:for="{{album.imgs}}" wx:key="*this">
+        <image src="{{sURL+item}}" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+    <!-- 专辑名称 -->
+    <view class="title">
+      {{album.name}}
+      </view>
+    </view>
+    <!-- 用户部分 -->
+    <view class="user">
+      <image src="{{sURL+album.user.avatar}}"></image>
+      <view>{{album.user.name}}</view>
+
+    </view>
+</view>

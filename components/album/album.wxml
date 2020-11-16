@@ -1,5 +1,5 @@
 <scroll-view scroll-y="true" enable-flex class="album">
-  <view class="album_item" wx:for="{{list}}" wx:key="_id">
+  <view class="album_item" wx:for="{{list}}" wx:key="_id" data-index="{{index}}" bindtap="goAlbumDetail">
     <!-- 标题部分 -->
     <view class="txtbox">
     <view class="txt_name">{{item.name}}</view>
